@@ -11,7 +11,8 @@ namespace FireworkApp
     {
         public void Configuration(IAppBuilder app)
         {
-            app.MapSignalR();
+            //app.MapSignalR();
+            app.MapAzureSignalR(this.GetType().FullName);
         }
     }
 }
